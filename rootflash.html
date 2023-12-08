@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléchargement</title>
+    <style>
+        body {
+            background-image: url('https://images8.alphacoders.com/131/1312071.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            color: white;
+            position: relative;
+        }
+
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: orange;
+            color: rgb(6, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1; /* Assurez-vous que le bouton est au-dessus du carré noir */
+        }
+
+        .button-background {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px; /* Ajustez la hauteur selon vos besoins */
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 0; /* Placez le carré noir derrière le bouton */
+        }
+
+        #overlay-text {
+            color: white;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        #carousel-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        #carousel {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .image {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-right: 5px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image:hover {
+            transform: scale(1.2);
+        }
+
+        #video-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px; /* Ajustez la largeur selon vos besoins */
+            height: 320px; /* Ajustez la hauteur selon vos besoins */
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        #centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -300%);
+            background-color: orange;
+            color: black;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://mega.nz/file/QOcyVLjY#6KBdDPaeMkcPSGPRD1B_jwgdJUwOLzB-K9pdcLP7v7k" download="Root Flash.exe">
+        <div class="button-background"></div>
+        <button>Télécharger</button>
+    </a>
+    <div id="overlay">
+        <p id="overlay-text">Cette aventure inédite vous plongera dans une région de la planète</p>
+        <p id="overlay-text">4546B où règne un froid glacial. Armée de vos neurones et d’un </p>
+        <p id="overlay-text">matériel de survie rudimentaire au début de votre voyage,  vous </p>
+        <p id="overlay-text">êtes bien décidée à découvrir ce qui est arrivé à votre sœur...</p>
+        <div id="carousel-container">
+            <div id="carousel">
+                <img class="image" src="https://static.bandainamcoent.eu/high/subnautica/subnautica-below-zero/00-page-setup/SBZ_headermobile.jpg" alt="Image 1">
+                <img class="image" src="https://i.ytimg.com/vi/RYRPWoxLiko/maxresdefault.jpg" alt="Image 2">
+                <!-- Ajoutez d'autres images selon vos besoins -->
+            </div>
+        </div>
+    </div>
+    <div id="video-container">
+        <!-- Remplacez 'VOTRE_CODE_EMBED_YOUTUBE' par le code d'intégration fourni par YouTube -->
+        <iframe width="
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u1q7YNEJnFs" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div id="centered-text">
+        Root Flash
+    </div>
+    
+    </body>
+    </html>
+    
